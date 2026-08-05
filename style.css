@@ -1,0 +1,13 @@
+.container {
+  display: grid;
+  grid-template-columns: 2fr 6fr;
+  grid-template-rows: 1fr 5fr;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  height: 100dvh;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
