@@ -1,7 +1,30 @@
+:root {
+  --primary-color-light: rgb(255, 255, 255);
+  --primary-color-dark: rgb(0, 0, 0);
+  --background-color: rgb(226, 232, 239);
+  --accent-color-primary: rgb(25, 146, 212);
+  --accent-color-secondary: rgb(240, 180, 41);
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+}
+
+.icon {
+  height: 40px;
+}
+
 .container {
   display: grid;
-  grid-template-columns: 2fr 6fr;
+  grid-template-columns: 2fr 7fr;
   grid-template-rows: 1fr 5fr;
+  gap: 2rem;
+}
+
+.header,
+.main-content {
+  padding-right: 2rem;
 }
 
 .sidebar {
@@ -10,8 +33,101 @@
   height: 100dvh;
   grid-row-start: 1;
   grid-row-end: 3;
+
+  background-color: var(--accent-color-primary);
 }
 
-.icon {
+.sidebar-text {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: var(--primary-color-light);
+
+  padding: 1.5rem 0 0.5rem 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.sidebar-text > h2 {
+  font-size: 25px;
+  padding-left: 1.2rem;
+}
+
+.sidebar-text > img {
+  height: 45px;
+}
+
+.sidebar > button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: left;
+
+  background-color: transparent;
+  border: none;
+  color: var(--primary-color-light);
+
+  font-size: 16px;
+  font-weight: bold;
+  padding: 0.5rem 0 0.5rem 1.5rem;
+}
+
+.sidebar > button > img {
+  height: 25px;
+  margin-right: 2rem;
+}
+
+.btn-communities {
+  margin-bottom: 2rem;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+}
+
+.header-search {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 1rem 0 1rem 0;
+}
+
+.search-bar-container {
+  display: flex;
+  align-items: center;
+}
+
+.search-bar-info-container {
+  display: flex;
+  align-items: center;
+}
+
+.search-bar-container > button,
+.search-bar-info-container > button {
+  background-color: transparent;
+  border: none;
+}
+
+.search-bar-container > button > img,
+.search-bar-info-container > button > img {
+  height: 25px;
+}
+
+.search-bar {
+  background-color: var(--background-color);
+  border: none;
+  border-radius: 5rem;
+  width: 35rem;
+  padding: 2px 1rem;
+  margin-left: 1rem;
+}
+
+#profile-icon {
   height: 40px;
+}
+
+.header-search > p {
+  font-weight: bold;
 }

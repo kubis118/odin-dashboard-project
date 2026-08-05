@@ -6,11 +6,15 @@
     <title>Dashboard</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="reset.css" />
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+    </style>
   </head>
   <body>
     <div class="container">
       <section class="sidebar">
-        <div class="header-text">
+        <div class="sidebar-text">
           <img src="img/view-dashboard.svg" alt="" class="icon" />
           <h2>Dashboard</h2>
         </div>
@@ -50,18 +54,24 @@
 
       <section class="header">
         <section class="header-search">
-          <button class="btn-search">
-            <img src="img/magnify.svg" alt="" class="icon" />
-          </button>
-          <input type="text" />
-          <button class="btn-notifications">
-            <img src="img/bell-ring-outline.svg" alt="" class="icon" />
-          </button>
-          <button class="btn-profile-icon">
-            <img src="img/hacker.png" alt="" class="icon" />
-          </button>
-          Morgan Oakley
+          <div class="search-bar-container">
+            <button class="btn-search">
+              <img src="img/magnify.svg" alt="" class="icon" />
+            </button>
+            <input type="text" class="search-bar" />
+          </div>
+
+          <div class="search-bar-info-container">
+            <button class="btn-notifications">
+              <img src="img/bell-ring-outline.svg" alt="" class="icon" />
+            </button>
+            <button class="btn-profile-icon">
+              <img src="img/hacker.png" alt="" class="icon" id="profile-icon" />
+            </button>
+            <p>Morgan Oakley</p>
+          </div>
         </section>
+
         <section class="header-info">
           <img src="img/hacker.png" alt="" class="icon" />
           <div class="header-name">
