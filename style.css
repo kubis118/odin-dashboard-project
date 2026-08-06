@@ -17,7 +17,7 @@ body {
 
 .container {
   display: grid;
-  grid-template-columns: 2fr 7fr;
+  grid-template-columns: 1fr 4fr;
   grid-template-rows: 1fr 5fr;
   gap: 2rem;
 }
@@ -124,10 +124,73 @@ body {
   margin-left: 1rem;
 }
 
+.search-bar-info-container > button {
+  padding: 0 1.5rem;
+}
+
+.search-bar-info-container > p {
+  font-weight: bold;
+}
+
 #profile-icon {
   height: 40px;
+  flex-shrink: 0;
 }
 
 .header-search > p {
   font-weight: bold;
+}
+
+.header-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-profile-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.header-profile-info > img {
+  height: 60px;
+}
+
+.header-name-container {
+  padding-left: 1rem;
+}
+
+.header-name-container > p {
+  font-weight: bold;
+}
+
+.header-name-container > p:first-child {
+  font-size: 14px;
+}
+
+.header-name {
+  font-size: 22px;
+}
+
+.header-info-btns > button {
+  background-color: var(--accent-color-primary);
+  color: white;
+  border: none;
+  border-radius: 5rem;
+
+  font-size: 14px;
+  font-weight: bold;
+
+  width: 5rem;
+  padding: 0.3rem 0;
+}
+
+.header-info-btns > button:last-child {
+  margin-left: 0.5rem;
+}
+
+.header-info-btns > button:nth-child(-n + 2) {
+  margin: 0 0.5rem;
 }
